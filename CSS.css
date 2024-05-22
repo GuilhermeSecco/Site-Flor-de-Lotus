@@ -1,0 +1,292 @@
+body::before {
+  content: "";
+  background-image: url('Marca\ Vetorizada.svg');
+  background-size:auto ;
+  position: fixed;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -2;
+}
+
+@media (min-width:1080px){
+  .flexbox{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 180, 180, 0.5);
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+
+  .menu{
+    justify-content: end;
+  }
+
+  .menu a{
+    font-size: 33px;
+  }
+
+  .flexbox div {
+    border: #FFF solid 2px;
+    margin: 5px;
+    width: 300px;
+    height: auto;
+    border-radius: 2%;
+    text-align: center;
+    text-orientation: upright;
+  }
+
+  .flexbox div:hover{
+    background-color: rgba(255,255,255, 0.3);
+  }
+
+  .work{
+    display: flex;
+    z-index: 2;
+    width: 1404px;
+    height: 500px;
+    top: -25px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: pink 3px solid;
+    position:relative;
+    left: 215px;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+  
+  .work div{
+    background-color: rgba(255, 180, 180, 0.2);
+    border: 2px pink solid;
+    width: 300px;
+    margin: 2px;
+    text-align: center;
+    padding: 80px;
+   
+  }
+  
+  .work::before{ 
+    content: "";
+    background-image:url(Flor\ de\ Lótus.svg);
+    background-size: 234px;
+    opacity: 0.3;
+    position: absolute;
+    background-repeat: repeat;
+    top: 15px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;}
+  
+  .work div:hover{
+    background-color: rgba(255, 180, 180, 0.3);
+
+    
+  }
+  .extras{
+      display: flex;
+      border: 6px pink double;
+      width: 1400px;
+      text-align: center;
+    }
+}
+
+@media (max-width:1080px){
+  .flexbox{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 180, 180, 0.5);
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+
+  .menu{
+    justify-content: end;
+  }
+
+  .menu a{
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .flexbox div {
+    border: #FFF solid 2px;
+    margin: auto;
+    height: auto;
+    border-radius: 2%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .flexbox div:hover{
+    background-color: rgba(255,255,255, 0.3);
+  }
+
+  .work{
+    display: flex;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    top: -25px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border: pink 3px solid;
+    position:relative;
+    text-align: center;
+  }
+  
+  .work div{
+    background-color: rgba(255, 180, 180, 0.2);
+    border: 2px pink solid;
+    min-width: 79%;
+    margin: 2px;
+    text-align: center;
+    padding: 10%;
+   
+  }
+  
+  .work::before{
+    content: "";
+    background-image:url(Flor\ de\ Lótus.svg);
+    background-size: 480px;
+    opacity: 0.3;
+    position: absolute;
+    background-repeat: repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+  }
+}
+
+.flexbox div a:visited{
+  color: purple;
+}
+
+.flexbox div a:link{
+  color: black
+}
+
+.flexbox div a:link:hover{
+  color: purple;
+  text-decoration: underline;
+}
+
+.work div a:visited{
+  color: purple;
+}
+
+.work div a:link{
+  color: black
+}
+
+.work div a:link:hover{
+  color: purple;
+  text-decoration: underline;
+}
+
+#icon{width: 50px;
+height: fit-content;
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 4;}
+
+#icon:hover{
+  background-color: rgba(255,255,255, 0.3);
+  border-radius: 50%;
+}
+
+main{
+  margin-top: 60px;
+  background-color: rgba(255, 180, 180, 0.1);
+}
+
+.corpo{
+  background-size: content;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: initial;
+  z-index: 1;
+}
+
+#area{
+  max-width: 1400px;
+  margin: auto;
+  background-color: rgba(255, 180, 180, 0.2);
+  border: 6px pink double;
+}
+
+.atendimento{
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 180, 180, 0.2);
+  border: 6px pink double;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.atendimento div{
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 750px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px pink solid;
+}
+
+.atendimento div p{font-size: 30px;}
+
+#info{
+  background-color: rgba(255, 180, 180, 0.4);
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: pink 2px solid;
+}
+
+.contatos{
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 180, 180, 0.2);
+  border: 6px pink double;
+  padding-bottom: 10px;
+}
+
+.contatos p{font-size: 30px;}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 35px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: initial;
+
+}
+
+h3{
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+  max-width: 1400px;
+  margin: auto;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: initial;
+}
+
+a{
+  text-decoration: none;
+}
