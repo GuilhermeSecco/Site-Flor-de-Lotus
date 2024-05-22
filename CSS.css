@@ -197,7 +197,7 @@ body::before {
 }
 
 #icon{width: 50px;
-height: fit-content;
+height: 50px;
 position: fixed;
 top: 0px;
 left: 0px;
