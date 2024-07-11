@@ -210,6 +210,8 @@ body::before {
     width: 40%;
     border-radius: 2%;
     text-align: center;
+    font-size: 30px;
+    color: black;
   }
 
   .flexbox div:hover{
