@@ -13,6 +13,20 @@ body::before {
 }
 
 @media (min-width:1080px){
+
+  #escrita{width: 400px;
+    height: 200px;
+    position: fixed;
+    top: -73px;
+    left: 30px;
+    z-index: 4;}
+    
+    #pingo{width: 11px;
+    height: auto;
+    position: fixed;
+    top: 8px;
+    left: 130px;
+    z-index: 4;}
   
   main{
     margin-top: 60px;
@@ -34,7 +48,7 @@ body::before {
     justify-content: end;
   }
 
-  .menu a{
+  .menu button{
     font-size: 33px;
   }
 
@@ -72,26 +86,31 @@ body::before {
   .work{
     display: flex;
     z-index: 2;
-    width: 1404px;
+    width: 1074px;
     height: 500px;
     top: -25px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: auto;
     border: pink 3px solid;
     position:relative;
-    left: 215px;
     text-align: center;
-    padding-bottom: 4px;
   }
   
   .work div{
     background-color: rgba(255, 180, 180, 0.2);
     border: 2px pink solid;
-    width: 300px;
     margin: 2px;
     text-align: center;
-    padding: 80px;
-   
+  }
+
+  .work div button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 350px;
+    height:200px;
+    background-color: transparent;
+    font-size: 50px;
+    border: 0px;
   }
   
   .work::before{ 
@@ -109,8 +128,6 @@ body::before {
   
   .work div:hover{
     background-color: rgba(255, 180, 180, 0.3);
-
-    
   }
   .extras{
       display: flex;
@@ -118,12 +135,60 @@ body::before {
       width: 1400px;
       text-align: center;
     }
+
+  .atendimento{
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 180, 180, 0.2);
+  border: 6px pink double;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.atendimento div{
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 750px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px pink solid;
+}
+  
+  #back{
+    background-color: rgba(255, 180, 180, 0.5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px pink solid;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .back:hover{
+    background-color: rgba(255, 180, 180, 0.3);
+  }
 }
 
 @media (max-width:1080px){
+
+  #basico{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 180, 180, 0.5);
+    z-index: 3;
+  }
+
+  #escrita{width: 1000px;
+    height: 200px;
+    position: fixed;
+    bottom: -60px;
+    z-index: 4;
+    }
   
+  #pingo{display: none;}
+
   main{
-    margin-top: 40px;
+    margin-top: 60px;
     background-color: rgba(255, 180, 180, 0.1);
   }
 
@@ -142,21 +207,25 @@ body::before {
     border: #FFF solid 2px;
     margin: auto;
     height: auto;
+    width: 40%;
     border-radius: 2%;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
   }
 
   .flexbox div:hover{
     background-color: rgba(255,255,255, 0.3);
   }
 
+  .flexbox button{
+    width: 100%;
+    text-align: center;
+  }
+
   .menu{
     justify-content: end;
   }
 
-  .menu a{
+  .menu button{
     font-size: 50px;
     text-align: center;
   }
@@ -165,22 +234,22 @@ body::before {
     width: 80px;
     height: 80px;
     position: fixed;
-    bottom: 1%;
+    bottom: 0%;
     right: 0%;
-    z-index: 4;
+    z-index: 5;
     background-color: rgb(255, 180, 180);
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   .work{
     display: flex;
     z-index: 2;
-    width: auto;
+    width: 100%;
     height: auto;
     top: -25px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin: auto;
     border: pink 3px solid;
     position:relative;
     text-align: center;
@@ -189,11 +258,18 @@ body::before {
   .work div{
     background-color: rgba(255, 180, 180, 0.2);
     border: 2px pink solid;
-    min-width: 79%;
     margin: 2px;
     text-align: center;
-    padding: 10%;
-   
+  }
+
+  .work div button{
+    text-align: center;
+    min-width: 955px;
+    max-width: 90%;
+    height: 315px;;
+    background-color: transparent;
+    font-size: 60px;
+    border: 2px;
   }
   
   .work::before{
@@ -214,45 +290,68 @@ body::before {
     width: 0px;
     height: 0px;
   }
+
+  #back{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .atendimento{
+    max-width: 800px;
+    max-height: 100%;
+    margin: auto;
+    background-color: rgba(255, 180, 180, 0.2);
+    border: 6px pink double;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .atendimento form div{
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 750px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px pink solid;
+    font-size: 60px;
+  }
 }
 
-.flexbox div a:visited{
+.flexbox div button:visited{
   color: purple;
 }
 
-.flexbox div a:link{
+.flexbox div button:link{
   color: black
 }
 
-.flexbox div a:link:hover{
+.flexbox div button:hover{
   color: purple;
   text-decoration: underline;
 }
 
-.work div a:visited{
+.work div button:visited{
   color: purple;
 }
 
-.work div a:link{
+.work div button:link{
   color: black
 }
 
-.work div a:link:hover{
+.work div button:hover{
+  cursor: pointer;
   color: purple;
   text-decoration: underline;
-}
-
-.corpo{
-  background-size: content;
-  text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-style: initial;
-  z-index: 1;
 }
 
 #area{
-  max-width: 1400px;
+  text-align: center;
   margin: auto;
+  max-width: 1070px;
   background-color: rgba(255, 180, 180, 0.2);
   border: 6px pink double;
 }
@@ -264,6 +363,7 @@ body::before {
   border: 6px pink double;
   margin-top: 50px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .atendimento div{
@@ -275,6 +375,14 @@ body::before {
 }
 
 .atendimento div p{font-size: 30px;}
+
+.menu button{
+  cursor: pointer;
+  width: 300px;
+  background-color: transparent;
+  margin: 0px;
+  border: 0px;
+}
 
 #info{
   background-color: rgba(255, 180, 180, 0.4);
@@ -291,31 +399,82 @@ body::before {
   padding-bottom: 10px;
 }
 
-.contatos p{font-size: 30px;}
+.contatos p{font-size: 45px;}
+
+#lista div textarea{
+  width: 90%;
+  resize: vertical;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
 
 h1{
   font-size: 50px;
 }
 
 h2{
-  font-size: 35px;
+  background-size: content;
+  text-align: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-style: initial;
-
+  z-index: 1;
+  font-size: 40px;
 }
 
 h3{
-  font-size: 30px;
+  background-size: content;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: initial;
+  z-index: 1;
+  font-size: 35px;
 }
 
 p{
-  font-size: 20px;
+  font-size: 25px;
   max-width: 1400px;
   margin: auto;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-style: initial;
 }
 
+#lista div label{
+  font-size: 30px;
+}
+
+#lista div input{
+  text-align: center;
+  width: 40%;
+  height: 30px;
+  font-size: 25px;
+}
+
+#enviar{
+    background-color: rgba(255, 180, 180, 0.5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 0px pink solid;
+    font-size: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#enviarDiv{
+  text-align: center;
+}
+
 a{
   text-decoration: none;
 }
+
+
+
+#reiki{display: none;}
+#limpeza{display: none;}
+#registros{display: none;}
+#energia{display: none;}
+#divorcio{display: none;}
+#missao{display: none;}
+#back{display: none;}
+
+.atendimento{display: none;}
+.contatos{display: none;}
