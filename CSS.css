@@ -326,6 +326,11 @@ body::before {
     border: 2px pink solid;
     font-size: 60px;
   }
+
+  .info{
+    padding-bottom: 50px;
+  }
+  
 }
 
 .flexbox div button:visited{
